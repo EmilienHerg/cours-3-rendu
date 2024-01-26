@@ -28,7 +28,7 @@ class WalletTest extends TestCase
 
     public function testGetCurrency(): void
     {
-        $this->assertEquals($this->wallet->getCurrency(), 'EUR');
+        $this->assertEquals($this->wallet->getCurrency(), $this->currency);
     }
 
     public function testSetBalanceOK(): void
